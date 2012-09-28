@@ -1,6 +1,6 @@
 /*
 Theme Name: Bueno
-Description: Repurposing the woothemes.com's Bueno Wordpress theme into an Ushahidi Theme. 
+Description: Repurposing the woothemes.com's Bueno Wordpress theme into an Ushahidi Theme.
 Demo: http://www.woothemes.com/2009/11/bueno/
 Version: 1.0
 Author: Caleb Bell
@@ -10,7 +10,7 @@ Author Email: caleb@ushahidi.com
 
 /* Theme Settings
 --------------------*/
-  
+
   /* Primary Color */
   h1, a,
   table.table-list tbody tr td a,
@@ -21,7 +21,7 @@ Author Email: caleb@ushahidi.com
   div.submit-incident a, .btn_submit,
   div.filters ul li a:hover, div.filters ul li a.active,
   ul.category-filters li a:hover, ul.category-filters li a.active { background-color:#d75c60; }
-  
+
   /* Lighter Primary Color - for hover effects */
   div#loggedin_user_action a, div#loggedin_user_action a:visited { color:#f3686d; }
   div.submit-incident a:hover, .btn_submit:hover,
@@ -29,19 +29,20 @@ Author Email: caleb@ushahidi.com
   div#mainmenu ul,
   div#mainmenu ul li a:hover,
   div#mainmenu a.active { border-color:#f3686d; }
-  
+
   /* Accent Color - used on the primary nav and in the footer area */
   div#mainmenu,
   div#mainmenu ul li a,
   div.additional-content { border-color:#FBDDDF; }
   div#underfooter { background:#FBDDDF; }
-  
+
   /* Page Background Pattern */
   /*----------------------*/
-  body#page { background: transparent url("../images/bodytile.jpg") repeat; }
+  body#page { background: transparent url("../images/background.png") left top no-repeat; }
 
 
-/* Feel free to edit these, but you don't have to. */
+div.map { width:auto; border:1px solid #fff; border-top:0; position:relative; }
+#mapStatus { width:auto; float:none; overflow:auto; border:1px solid #fff; }
 
 /* general styles */
 h1 {
@@ -68,8 +69,8 @@ div#middle {
 }
 div#main {
   background: #fff;
-  padding: 15px 18px;
-  border: 5px solid #EFEFEF;
+  padding: 0;
+  border: none;
   margin-top: 18px;
 }
 /* top-bar */
@@ -143,6 +144,15 @@ div.submit-incident a, .btn_submit {
   -webkit-border-radius: 3px;
 }
 
+div#main .withright div#content{
+    margin: 0px 305px 0px 0px;
+    padding: 0px;
+}
+div#logo {width: 100%}
+div#logo h1 {
+  text-shadow: 2px 2px 4px #fff;
+  text-align: center;
+}
 /* primary nav */
 div#mainmenu {
   background: none;
